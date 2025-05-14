@@ -1,6 +1,6 @@
 
 # Smart Recycle Hub ♻️
-E waste Facility Locator & Recycling Platform ♻️
+E waste Facility Locator & Recycling Platform 
 
 An final year project done by students of KGISL Institute of Technology
 
@@ -11,25 +11,8 @@ Here you can view the deployed version
 
 ![image](https://github.com/RITHIKA-TS/trash-track/blob/main/a.jpg)
 ![image](https://github.com/RITHIKA-TS/trash-track/blob/main/b.jpg?raw=true)
-![image]
-![image](https://github.com/shuence/ELocate/assets/65482186/b48752ab-dc1e-48ea-9f83-5a7d47d50ccf)
-
-
-## Setup
-
-To Setup this project run
-
-```bash
-git clone https://github.com/shuence/ELocate
-cd ELocate
-yarn
-yarn dev
-```
-
-## Resources
-
-- [NextJs Docs](https://nextjs.org/docs)
-- [Tailwind Css](https://tailwindcss.com/docs/)
+![image](https://github.com/RITHIKA-TS/trash-track/blob/main/c.jpg)
+![image](https://github.com/RITHIKA-TS/trash-track/blob/main/d.jpg)
 
 ## ELocate Features
 
