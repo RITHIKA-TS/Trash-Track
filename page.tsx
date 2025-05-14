@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Recycle from "./Recycle";
+import Profile from "./Profile";
 
 const Page = () => {
   return (
@@ -13,7 +13,7 @@ const Page = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="md:mt-20 mt-16 pt-8">
-          <Recycle />
+          <Profile />
         </div>
       </motion.div>
     </>
