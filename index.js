@@ -1,54 +1,50 @@
-// index.js or app.js
+'use strict';
 
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
+var composer = require('./compose/composer.js');
+var Document = require('./doc/Document.js');
+var Schema = require('./schema/Schema.js');
+var errors = require('./errors.js');
+var Alias = require('./nodes/Alias.js');
+var identity = require('./nodes/identity.js');
+var Pair = require('./nodes/Pair.js');
+var Scalar = require('./nodes/Scalar.js');
+var YAMLMap = require('./nodes/YAMLMap.js');
+var YAMLSeq = require('./nodes/YAMLSeq.js');
+var cst = require('./parse/cst.js');
+var lexer = require('./parse/lexer.js');
+var lineCounter = require('./parse/line-counter.js');
+var parser = require('./parse/parser.js');
+var publicApi = require('./public-api.js');
+var visit = require('./visit.js');
 
-const bookingRoutes = require("./routes/booking");
-const { sendSMS } = require("./twilio/sendSMS"); // Reusable Twilio function
 
-const app = express();
 
-// Middleware to parse JSON requests
-app.use(express.json());
-
-// Use cors middleware
-app.use(
-  cors({
-    origin: "http://localhost:3000", // Replace with your frontend URL
-  })
-);
-
-// MongoDB connection
-const connectToMongoDB = async () => {
-  try {
-    if (!process.env.MONGODB_URI) {
-      throw new Error("MONGODB_URI environment variable is not set.");
-    }
-
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("✅ MongoDB connected");
-  } catch (err) {
-    console.error("❌ MongoDB connection error:", err);
-    process.exit(1);
-  }
-};
-connectToMongoDB();
-
-// Routes
-app.use("/api/v1/booking", bookingRoutes);
-
-// Root endpoint
-app.get("/", (req, res) => {
-  res.send("Backend is running...");
-});
-
-// Start server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+exports.Composer = composer.Composer;
+exports.Document = Document.Document;
+exports.Schema = Schema.Schema;
+exports.YAMLError = errors.YAMLError;
+exports.YAMLParseError = errors.YAMLParseError;
+exports.YAMLWarning = errors.YAMLWarning;
+exports.Alias = Alias.Alias;
+exports.isAlias = identity.isAlias;
+exports.isCollection = identity.isCollection;
+exports.isDocument = identity.isDocument;
+exports.isMap = identity.isMap;
+exports.isNode = identity.isNode;
+exports.isPair = identity.isPair;
+exports.isScalar = identity.isScalar;
+exports.isSeq = identity.isSeq;
+exports.Pair = Pair.Pair;
+exports.Scalar = Scalar.Scalar;
+exports.YAMLMap = YAMLMap.YAMLMap;
+exports.YAMLSeq = YAMLSeq.YAMLSeq;
+exports.CST = cst;
+exports.Lexer = lexer.Lexer;
+exports.LineCounter = lineCounter.LineCounter;
+exports.Parser = parser.Parser;
+exports.parse = publicApi.parse;
+exports.parseAllDocuments = publicApi.parseAllDocuments;
+exports.parseDocument = publicApi.parseDocument;
+exports.stringify = publicApi.stringify;
+exports.visit = visit.visit;
+exports.visitAsync = visit.visitAsync;
