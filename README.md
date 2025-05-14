@@ -1,15 +1,8 @@
 
-# ELocate ♻️
+# Smart Recycle Hub ♻️
 E waste Facility Locator & Recycling Platform ♻️
 
-A i-nnovate Hackathon by intelliswift Finalist Project **Team Spam Byte From Deogiri Institute of Engineering And Management Studies Chh. Sambhajinagar.**
-
-**Update** : Won The Position of **Second Runner** Up & 30 K price in hackathon at [**i-nnovate Hackathon 2023**](https://www.intelliswift.com/innovate-hackathon) By [Intelliswift Software Pvt. Ltd](https://www.intelliswift.com/) at **Symbiosis International University**
-
-Click on link below to have intro to ELocate :
-
-[Intro To Elocate Video in Short But In Detail](https://youtu.be/rEyCnsLWbJU)
-
+An final year project done by students of KGISL Institute of Technology
 
 ## Live Preview
 
@@ -21,10 +14,6 @@ Here you can view the deployed version
 ![image](https://github.com/shuence/ELocate/assets/65482186/930b1433-3d1b-4a32-a3c5-5f7f75ebbabc)
 ![image](https://github.com/shuence/ELocate/assets/65482186/b48752ab-dc1e-48ea-9f83-5a7d47d50ccf)
 
-## Videos 
-
-Click on link below to have demo of our prototype :
-[Prototype Video](https://youtu.be/3IN58Qo_FvA)
 
 ## Setup
 
@@ -62,27 +51,24 @@ yarn dev
 
 While building this project, We embarked on our  full-stack journey, The journey was both exciting and challenging, and We learned a lot along the way:
 
-1. **Frontend Gracefulness:** As We crafted the frontend, We encountered various errors, but I embraced each challenge as an opportunity to learn. With useState and other hooks, along with Tailwind Css for styling, we built an intuitive and responsive user interface.
+1. **Frontend Gracefulness:** As We crafted the frontend, We encountered various errors, but  embraced each challenge as an opportunity to learn. We built an intuitive and responsive user interface.
 
-2. **Backend Confidence:** Setting up the Express and MongoDB server initially seemed daunting, but We persisted. Working on controllers for API calls and defining routes took time, but We gained confidence as We overcame each obstacle.
+2. **Backend Confidence:** Setting up the MongoDB server initially seemed daunting, but We persisted. Working on controllers for API calls and defining routes took time, but We gained confidence as We overcame each obstacle.
 
-3. **Expanded Toolkit:** Throughout the project, We explored additional React concepts like useEffect, useContext, and NextJs 14 SSR Features.
+3. **Deployment Know-How:** Deploying the backend server was a crucial step in making the application accessible online. We learned to configure the production environment, manage dependencies, and ensure security with HTTPS and authentication.
 
-4. **Deployment Know-How:** Deploying the backend server was a crucial step in making the application accessible online. We learned to configure the production environment, manage dependencies, and ensure security with HTTPS and authentication.
+4. **Continuous Improvement:** We adopted a proactive approach to monitoring and logging server performance, identifying potential issues early on and implementing CI/CD pipelines for smooth and automated deployments.
 
-5. **Continuous Improvement:** We adopted a proactive approach to monitoring and logging server performance, identifying potential issues early on and implementing CI/CD pipelines for smooth and automated deployments.
+5. **The Joy of Problem-Solving:** Despite encountering obstacles, We discovered the joy of problem-solving and the satisfaction that comes with finding solutions to complex challenges.
 
-6. **The Joy of Problem-Solving:** Despite encountering obstacles, We discovered the joy of problem-solving and the satisfaction that comes with finding solutions to complex challenges.
+6. **Version Control and Rollbacks:** We grasped the importance of version control not only for the codebase but also for server configurations, facilitating easy rollbacks if needed.
 
-7. **Version Control and Rollbacks:** We grasped the importance of version control not only for the codebase but also for server configurations, facilitating easy rollbacks if needed.
-
-Overall, this project marked a significant milestone in Our journey in this i-nnovate Hackathon
-by intelliswift. 
+Overall, this project marked a significant milestone in Our journey 
 ## Tech Stack
 
-**Client:** NextJs, TailwindCss, React Icons, MapBox
+**Client:** NextJs, TailwindCss, React Icons, 
 
-**Server:** Node.js, ExpressJs
+**Server:** Node.js, react.js
 
 **Database:** MongoDB
 
@@ -90,25 +76,24 @@ by intelliswift.
 ## Roadmap
 
 - Implement additional login options, such as Google signup.
-- Explore and integrate popular payment gateways for secure online transactions.
+- Explore and integrate multilingual chatbot
 - Enhance the app with modern features like real-time chat support and personalized recommendations.
 - Introduce advanced search filters for customized facility searches.
 - Implement a user dashboard for managing and tracking bookings.
 - Implement facility dashboard for managing and updating facility info and manage bookings and other data.
 - Implement Admin dashboard for managing and updating facilities, verification, generating various reports and other data.
-# Hi, We are Spam Byte! 👋
+
 
 
 ## 🚀 About us
 
-We are a team from Deogiri Institute of Engineering And Management Studies Chh. Sambhajinagar.
+We are a team from KGISL Institute of Technology, Saravanampatti
 
-- Krishna Dnyaneshwar Aute - [Krishna]()
-- Shubham Vishnu Pitekar - [Shuence](https://github.com/shuence)
-- Dayeeta Chakravorty - [Dayeeta]()
-- Samruddhi Shirish Giri - [Samruddhi]()
-- Siddhi Sudhakar Tribhuwan - [Siddhi]()
+- Priya A 
+- Rithika T S 
+- Dhivakar M 
+- Sabareeshwaran S 
+
 
 ## Happy coding 💯
 
-Made with love from [Spam Byte](https://shuence.netlify.app) ❤️
