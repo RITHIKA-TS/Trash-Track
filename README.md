@@ -7,7 +7,7 @@ An final year project done by students of KGISL Institute of Technology
 ## Live Preview
 
 Here you can view the deployed version
-[ELocate ♻️](https://elocateinnovate.vercel.app)
+[ELocate ♻️](https://trashtrack-finalyear.vercel.app/)
 
 ![image](https://github.com/RITHIKA-TS/trash-track/blob/main/a.jpg)
 ![image](https://github.com/RITHIKA-TS/trash-track/blob/main/b.jpg?raw=true)
